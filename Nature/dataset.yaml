@@ -1,0 +1,4 @@
+train: /home/sysadm/Downloads/Nature/train/
+val: /home/sysadm/Downloads/Nature/test/
+nc: 2
+names: ["squirrel", "butterfly"]

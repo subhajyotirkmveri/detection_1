@@ -1,0 +1,8 @@
+pip install labelme2yolo
+labelme2yolo --json_dir dataset/train
+labelme2yolo --json_dir dataset/test
+pip install ultralytics
+python3
+yolo task=detect mode=train epochs= 100 data=dataset.yaml model=yolov8n.pt imgsz=640 batch=3
+python3 predict.py
+
